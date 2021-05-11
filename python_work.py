@@ -16,7 +16,7 @@ predict_model = tf.keras.models.load_model('./models/model_tensorflow')
 predict_model.summary()
 
 # img_path = 'D:/Study/AI/Python/NhanDang/Main/digits.jpg'
-img_path = './assets/test/2.jpg'
+img_path = './assets/test/1.jpg'
 num_rows = 37
 
 parser = argparse.ArgumentParser()
