@@ -42,13 +42,7 @@ def get_contour_area_from_img(img, contour):
 
 
 def get_rotated_image_from_contour(img, contour):
-    """ Returns a rotated version of img based on cv2.minAreaRect of contour.
 
-        First side, (i.e most left to top edge) is always "Width" from minAreaRect.
-        If our width > height, we know we have the sheet rotated to the right. 
-        We need to shift our angle and width 90 degree in order to get the correct
-        coordinates from cv2.boxPoints
-    """
     rotated_rect = cv2.minAreaRect(contour)
 
     # Get the center x,y and width and height.

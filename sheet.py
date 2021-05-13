@@ -34,27 +34,13 @@ def __should_merge_lines(line_a, line_b, rho_distance, theta_distance):
         return True
     return False
 
-def resize_to_right_ratio(img, interpolation=cv2.INTER_LINEAR, width=700):
+def resize_to_right_ratio(img, interpolation=cv2.INTER_LINEAR, width=750):
     ratio_width = width / img.shape[1]
     # Resize
     return cv2.resize(img, None, fx=ratio_width, fy=ratio_width, interpolation=interpolation)
 
 
 def merge_lines(line_a, line_b):
-    """ Merge line_a and line_b by the average rho and angle.
-
-            |
-       Q3   |   Q4
-            |
-    -----------------
-            |
-       Q2   |   Q1
-            |
-
-        Rho and theta works in the clockwise direction starting from Q1.  If rho < 0, lines
-        are drawn in Q3 or Q4, else in Q1, Q2.  Theta is always positive going from 0 to PI
-        We have to consider this when merging the lines
-    """
     rho_b, theta_b = line_b[0]
     rho_a, theta_a = line_a[0]
 
@@ -82,10 +68,7 @@ def merge_lines(line_a, line_b):
     return [[average_rho, average_theta]]
 
 def get_merged_line(lines, line_a, rho_distance, degree_distance):
-    """ Merges all line in lines with the distance to line_a iteratively.
-    Returns:
-        list: a list of estimated lines
-    """
+
     for i, line_b in enumerate(lines):
         if line_b is False:
             continue
@@ -106,6 +89,7 @@ def get_merged_line(lines, line_a, rho_distance, degree_distance):
 #     # gray = cv2.GaussianBlur(gray, (5, 5), 0)
 #     ret, th1 = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY_INV)
 #     return cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 7,10)
+
 def get_adaptive_binary_image(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
@@ -114,14 +98,6 @@ def get_adaptive_binary_image(img):
     return cv2.adaptiveThreshold(gray, 255,  cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 7, 4)
 
 def merge_nearby_lines(lines, rho_distance=15, degree_distance=20):
-    """ Merges nearby lines with the specified rho and degree distance.
-    Args:
-        lines (list): A list of lines (rho, theta), see OpenCV HoughLines
-        rho_distance (int): Distance in rho for lines to merge (default is 30)
-        degree_distacne (int): Distance in degrees for lines to merge (default is 20)
-    Returns:
-        list: a list of estimated lines
-    """
 
     lines = lines if lines is not None else []
     estimated_lines = []
@@ -198,29 +174,9 @@ def generate_sheet(img, num_rows_in_grid=37, max_num_cols=20):
     return img_sheet, img_binary_sheet, img_binary_only_numbers, cells_bounding_rects
 
 def get_grid(img_binary_sheet):
-    """ Returns a binary image with a grid and the input image containing only horizontal/vertical lines.
-    Args:
-        img_binary_sheet ((rows,col) array): binary image
-    Returns:
-        img_binary_grid: an image containing painted vertically and horizontally lines
-        img_binary_sheet_only_digits: an image containing only(mostly) handwritten digits
-    """
     height, width = img_binary_sheet.shape
 
     img_binary_sheet_morphed = img_binary_sheet.copy()
-
-    # Now we have the binary image with adaptive threshold.
-    # We need to do some morphylogy operations in order to strengthen thin lines, remove noise, and also handwritten stuff.
-    # We only want the horizontal / vertical pixels left before we start identifying the grid. See http://homepages.inf.ed.ac.uk/rbf/HIPR2/morops.htm
-
-    # CLOSING: (dilate -> erode) will fill in background (black) regions with White. Imagine sliding struct element
-    # in the background pixel, if it cannot fit the background completely(touching the foreground), fill this pixel with white
-
-    # OPENING: ALL FOREGROUND PIXELS(white) that can fit the structelement will be white, else black.
-    # Erode -> Dilate
-
-    # Erosion: If the structuring element can fit inside the forground pixel(white), then keep white, else set to black
-    # Dilation: For every background pixel(black), if one of the foreground(white) pixels are present, set this background (black) to foreground.
 
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
     img_binary_sheet_morphed = cv2.morphologyEx(img_binary_sheet_morphed, cv2.MORPH_DILATE, kernel)
@@ -249,12 +205,7 @@ def get_grid(img_binary_sheet):
                          sheet_binary_grid_horizontal)
     cv_utils.show_window("morph_keep_only_vertical_lines", sheet_binary_grid_vertical)
     cv_utils.show_window("concatenate_vertical_horizontal", img_binary_sheet_morphed)
-    # """
-    #     Time to get a solid grid, from what we see  above, the grid is still not fully filled (sometimes)
-    #     since the paper is not fully straight on the table etc. For this we use Hough Transform
-    #     Hough transform identifies points (x,y) on the same line.
-    # """
-    # We ideally should choose np.pi / 2 for the Theta accumulator, since we only want lines in 90 degrees and 0 degrees.
+
     rho_accumulator = 1
     angle_accumulator = np.pi / 2
     # Min vote for defining a line
@@ -325,9 +276,7 @@ def validate_and_find_cell(cells, bounding_rect):
     return found_cell
 
 def get_cells_bounding_rects(img_binary_grid, num_rows_in_grid=36, max_num_cols=20):
-    """ Returns a list with sorted bounding rect for every grid cell. """
-    # Now we have the grid in img_binary_grid
-    # Lets start identifying the cells by getting all contours from the vertical / horizontal binary img grid
+
     binary_grid_contours, _ = cv2.findContours(img_binary_grid, cv2.RETR_LIST,
                                                cv2.CHAIN_APPROX_SIMPLE)
 
@@ -357,8 +306,7 @@ def get_cells_bounding_rects(img_binary_grid, num_rows_in_grid=36, max_num_cols=
     grid_bounding_rect = cv_utils.concatenate_bounding_rects(cells_bounding_rects)
 
     shift_x, shift_y, _, _ = grid_bounding_rect
-    # We shift the bounding rect because every bounding rect of cell is relative the original image.
-    # We want the cell with index 0 to be located at position (0,0) i.e top left corner of image.
+
     cells_bounding_rects = list(map(lambda x: cv_utils.move_bounding_rect(x, -shift_x, -shift_y), cells_bounding_rects))
     cells_bounding_rects = sorted(cells_bounding_rects, key=cmp_to_key(sort_by_upper_left_pos))
     return cells_bounding_rects, grid_bounding_rect
