@@ -1,6 +1,6 @@
 import tensorflow as tf
 import numpy as np
-import cv2 as cv
+import cv2
 import matplotlib.pyplot as plt
 
 
@@ -36,15 +36,11 @@ x_train = x_train[:-10000]
 y_train = y_train[:-10000]
 
 # Simple CNN architecture with 2 conv layers
-# INPUT -> CONV3-32 -> RELU -> CONV3-32 -> RELU  -> CONV3-32 -> RELU -> POOL -> DROPOUT -> FC -> RELU -> DROPOUT -> SOFTMAX
 model = tf.keras.models.Sequential([
-    tf.keras.layers.Conv2D(32, kernel_size=(3, 3),
-                           activation='relu',
-                           input_shape=(28, 28, 1)),
-    tf.keras.layers.Conv2D(32, kernel_size=(3, 3),
-                           activation='relu'),
-    tf.keras.layers.Conv2D(32, kernel_size=(3, 3),
-                           activation='relu'),
+    tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation='relu',minput_shape=(28, 28, 1)),
+
+    tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation='relu'), tf.keras.layers.Conv2D(32, kernel_size=(3, 3), activation='relu'),
+
     # regularization
     tf.keras.layers.MaxPooling2D(pool_size=(2, 2)),
     # regularization

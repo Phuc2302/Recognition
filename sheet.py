@@ -2,6 +2,7 @@ from functools import cmp_to_key
 import cv2
 import numpy as np
 import cv_utils
+import time
 
 MIN_CELL_DIGIT_HEIGHT_RATIO = 2.5
 
@@ -12,15 +13,15 @@ def __should_merge_lines(line_a, line_b, rho_distance, theta_distance):
     if (rho_b == rho_a and theta_b == theta_b):
         return False
 
-    # Use degree for more intuitive user format
+    # Sử dụng mức độ để định dạng người dùng trực quan hơn
     theta_b = int(180 * theta_b / np.pi)
     theta_a = int(180 * theta_a / np.pi)
 
-    # In Q3 or Q4, See merge_lines method
+    # In Q3 or Q4, phương pháp merge_lines
     if rho_b < 0:
         theta_b = theta_b - 180
 
-    # In Q3 or Q4, See merge_lines method
+    # In Q3 or Q4, phương pháp merge_lines
     if rho_a < 0:
         theta_a = theta_a - 180
 
@@ -34,7 +35,7 @@ def __should_merge_lines(line_a, line_b, rho_distance, theta_distance):
         return True
     return False
 
-def resize_to_right_ratio(img, interpolation=cv2.INTER_LINEAR, width=750):
+def resize_to_right_ratio(img, interpolation=cv2.INTER_LINEAR, width=1550):
     ratio_width = width / img.shape[1]
     # Resize
     return cv2.resize(img, None, fx=ratio_width, fy=ratio_width, interpolation=interpolation)
@@ -44,25 +45,25 @@ def merge_lines(line_a, line_b):
     rho_b, theta_b = line_b[0]
     rho_a, theta_a = line_a[0]
 
-    # We are in Q3 or Q4 in unit circle
-    # Shift theta to be negative (inside Q3 to Q4)
+    #
+    # Chuyển theta thành âm (trong Q3 sang Q4)
     if rho_b < 0:
         rho_b = np.abs(rho_b)
         theta_b = theta_b - np.pi
 
-    # We are in Q3 or Q4 in unit circle,
-    # Shift theta to be negative (inside Q3 to Q4)
+    #
+    # Chuyển theta thành âm (trong Q3 sang Q4)
     if rho_a < 0:
         rho_a = np.abs(rho_a)
         theta_a = theta_a - np.pi
 
     average_theta = (theta_a + theta_b) / 2
     average_rho = (rho_a + rho_b) / 2
-    # We are in Q3 or Q4 after averaging both lines, format to OpenCV HoughLines format
+    # Trong Q3 hoặc Q4, sau khi tính trung bình cả hai dòng, định dạng sang định dạng OpenCV HoughLines
     if average_theta < 0:
-        # This rho is negative
+        # rho là giá trị âm
         average_rho = -average_rho
-        # Re-format to positive values for opencv HoughLines 0 to PI
+        # Định dạng lại thành giá trị dương cho opencv HoughLines 0 thành PI
         average_theta = np.abs(average_theta)
 
     return [[average_rho, average_theta]]
@@ -127,9 +128,7 @@ def sort_by_upper_left_pos(rect_a, rect_b):
     x_a, y_a, _, _ = rect_a
     x_b, y_b, w_b, _ = rect_b
 
-    # These code of lines are for handling scewed grid,
-    # but since we are only dealing with fully vertical/horizontal lines, this is not needed.
-    # Good for future if we want to work with scewed lines
+    # Xử lý phân tán
     x_b_offset_positive = x_b + w_b / 3
     x_b_offset_negative = x_b - w_b / 3
     is_same_column = x_a < x_b_offset_positive and x_a > x_b_offset_negative
@@ -139,7 +138,7 @@ def sort_by_upper_left_pos(rect_a, rect_b):
     return (x_a - x_b_offset_positive)
 
 def get_rotated_sheet(img, img_binary):
-    # Find the biggest outer contour to locate the Sheet. We use RETR_EXTERNAL and discard nested contours.
+    # Tìm đường bao bên ngoài lớn nhất để định vị trang tính. Sử dụng RETR_EXTERNAL và loại bỏ các đường bao lồng nhau.
     contours = cv_utils.get_external_contours(img_binary)
     biggest_contour = cv_utils.get_biggest_intensity_contour(contours)
 
@@ -150,28 +149,6 @@ def get_rotated_sheet(img, img_binary):
 
     return img_raw_sheet, img_binary_sheet_rotated
 
-def generate_sheet(img, num_rows_in_grid=37, max_num_cols=20):
-    # img = resize_to_right_ratio(img)
-    # Step 1
-    img_adaptive_binary = get_adaptive_binary_image(img)
-
-    cv_utils.show_window('img_adaptive_binary', img_adaptive_binary)
-
-    # Step2 and 3, Find the biggest contour and rotate it
-    img_sheet, img_binary_sheet = get_rotated_sheet(img, img_adaptive_binary)
-
-    # Step 4, Get a painted grid with vertical / horizontal lines
-    img_binary_grid, img_binary_only_numbers = get_grid(img_binary_sheet)
-
-    # Step 5, Get every grid cell as a sorted bounding rect in order to later locate numbers to correct cell
-    cells_bounding_rects, grid_bounding_rect = get_cells_bounding_rects(img_binary_grid, num_rows_in_grid, max_num_cols)
-
-    # Get the area of the grid from different versions of raw img
-    img_binary_only_numbers = cv_utils.get_bounding_rect_content(img_binary_only_numbers, grid_bounding_rect)
-    img_binary_sheet = cv_utils.get_bounding_rect_content(img_binary_sheet, grid_bounding_rect)
-    img_sheet = cv_utils.get_bounding_rect_content(img_sheet, grid_bounding_rect)
-
-    return img_sheet, img_binary_sheet, img_binary_only_numbers, cells_bounding_rects
 
 def get_grid(img_binary_sheet):
     height, width = img_binary_sheet.shape
@@ -181,24 +158,25 @@ def get_grid(img_binary_sheet):
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (5, 5))
     img_binary_sheet_morphed = cv2.morphologyEx(img_binary_sheet_morphed, cv2.MORPH_DILATE, kernel)
 
-    # cv_utils.show_window('morph_dilate_binary_img', img_binary_sheet_morphed)
+    cv_utils.show_window('morph_dilate_binary_img', img_binary_sheet_morphed)
 
     sheet_binary_grid_horizontal = img_binary_sheet_morphed.copy()
     sheet_binary_grid_vertical = img_binary_sheet_morphed.copy()
 
-    # We use relative length for the structuring line in order to be dynamic for multiple sizes of the sheet.
+    # Chúng tôi sử dụng độ dài tương đối cho dòng cấu trúc để linh hoạt cho nhiều kích thước của trang tính.
     structuring_line_size = int(width / 5.0)
 
-    # Try to remove all vertical stuff in the image,
+    # Xóa tất cả nội dung theo chiều dọc trong hình ảnh
     element = cv2.getStructuringElement(cv2.MORPH_RECT, (structuring_line_size, 1))
     sheet_binary_grid_horizontal = cv2.morphologyEx(sheet_binary_grid_horizontal, cv2.MORPH_OPEN, element)
 
-    # Try to remove all horizontal stuff in image, Morph OPEN: Keep everything that fits structuring element i.e vertical lines
+    # Xóa tất cả nội dung nằm ngang trong hình ảnh, Morph OPEN: Giữ mọi thứ phù hợp với yếu tố cấu trúc,
+    # tức là các đường thẳng đứng
     element = cv2.getStructuringElement(cv2.MORPH_RECT, (1, structuring_line_size))
 
     sheet_binary_grid_vertical = cv2.morphologyEx(sheet_binary_grid_vertical, cv2.MORPH_OPEN, element)
 
-    # Concatenate the vertical/horizontal lines into grid
+    # Nối các đường dọc / ngang thành lưới
     img_binary_sheet_morphed = cv2.add(sheet_binary_grid_vertical, sheet_binary_grid_horizontal)
 
     cv_utils.show_window("morph_keep_only_horizontal_lines",
@@ -208,21 +186,21 @@ def get_grid(img_binary_sheet):
 
     rho_accumulator = 1
     angle_accumulator = np.pi / 2
-    # Min vote for defining a line
+    # Bỏ phiếu tối thiểu để xác định một dòng
     threshold_accumulator_votes = int(width / 2)
 
-    # Find lines in the image according to the Hough Algorithm
+    # Tìm các dòng trong hình ảnh theo Thuật toán Hough
     grid_lines = cv2.HoughLines(img_binary_sheet_morphed, rho_accumulator,
                                 angle_accumulator, threshold_accumulator_votes)
 
     img_binary_grid = np.zeros(
         img_binary_sheet_morphed.shape, dtype=img_binary_sheet_morphed.dtype)
 
-    # Since we can have multiple lines for same grid line, we merge nearby lines
+    # Có thể có nhiều dòng cho cùng một đường lưới, nên hợp nhất các dòng lân cận
     grid_lines = merge_nearby_lines(grid_lines)
     draw_lines(grid_lines, img_binary_grid)
 
-    # Since all sheets does not have outerborders. We draw a rectangle around the
+    # Vì tất cả các trang tính không có viền ngoài. Nên vẽ một hình chữ nhật xung quanh
     outer_border = np.array([
         [1, height - 1],  # Bottom Left
         [1, 1],  # Top Left
@@ -231,7 +209,7 @@ def get_grid(img_binary_sheet):
     ])
     cv2.drawContours(img_binary_grid, [outer_border], 0, (255, 255, 255), 3)
 
-    # Remove the grid from the binary image an keep only the digits.
+    # Xóa lưới khỏi ảnh nhị phân và chỉ giữ lại các chữ số.
     img_binary_sheet_only_digits = cv2.bitwise_and(img_binary_sheet, 255 - img_binary_sheet_morphed)
 
     cv_utils.show_window("grid_binary_lines", img_binary_grid)
@@ -240,7 +218,7 @@ def get_grid(img_binary_sheet):
 
 
 def __filter_by_dim(val, target_width, target_height):
-    # Remove cells outside of target width/height
+    # Loại bỏ các ô bên ngoài chiều rộng / chiều cao mục tiêu
     offset_width = target_width * 0.6
     offset_height = target_height * 0.6
     _, _, w, h = val
@@ -256,12 +234,12 @@ def __get_most_common_area(bounding_rects, cell_resolution):
 
 
 def validate_and_find_cell(cells, bounding_rect):
-    """ Finds a corresponding cell for the bounding_rect. """
+    # Tìm ô tương ứng cho bounding_rect.
     roi_x, roi_y, roi_w, roi_h = bounding_rect
     roi_center_x = roi_x + int(roi_w/2)
     roi_center_y = roi_y + int(roi_h/2)
     _, _, cell_width, cell_height = cells[0]
-    # Discard noise contours
+    # Loại bỏ các đường viền nhiễu
     if(not 2 < roi_w < cell_width or not (cell_height/MIN_CELL_DIGIT_HEIGHT_RATIO) < roi_h < cell_height):
         return None
 
@@ -284,10 +262,10 @@ def get_cells_bounding_rects(img_binary_grid, num_rows_in_grid=36, max_num_cols=
 
     cell_min_width = (sheet_width/max_num_cols)
 
-    # Clean grid from small contours
+    # Làm sạch lưới từ các đường viền nhỏ
     cells_bounding_rects = [cv2.boundingRect(cnt) for cnt in binary_grid_contours if cv_utils.wider_than(cnt, cell_min_width)]
 
-    # Define resolution for cell area "bins"
+    # Xác định độ phân giải cho "bên trong" khu vực ô
     cell_resolution = (sheet_width/50) ** 2
 
     _, _, target_width, target_height = __get_most_common_area(cells_bounding_rects, cell_resolution)
@@ -301,7 +279,7 @@ def get_cells_bounding_rects(img_binary_grid, num_rows_in_grid=36, max_num_cols=
     correct_num_cells_in_grid = (num_cells >= num_rows_in_grid and num_cells % num_rows_in_grid == 0)
 
     if not correct_num_cells_in_grid:
-        print("ERROR: not correct number fo cells found in grid, num found:", num_cells)
+        print("ERROR: not correct number for cells found in grid, num found:", num_cells)
 
     grid_bounding_rect = cv_utils.concatenate_bounding_rects(cells_bounding_rects)
 
@@ -310,3 +288,55 @@ def get_cells_bounding_rects(img_binary_grid, num_rows_in_grid=36, max_num_cols=
     cells_bounding_rects = list(map(lambda x: cv_utils.move_bounding_rect(x, -shift_x, -shift_y), cells_bounding_rects))
     cells_bounding_rects = sorted(cells_bounding_rects, key=cmp_to_key(sort_by_upper_left_pos))
     return cells_bounding_rects, grid_bounding_rect
+
+def generate_sheet(img, num_rows_in_grid=37, max_num_cols=20):
+    start = time.time()
+
+    img = resize_to_right_ratio(img)
+
+    end_resize = time.time()
+    print("=================================================")
+    print("Time to resize the image: ")
+    print("---- %s seconds ----" % (end_resize - start))
+    # Step 1
+    img_adaptive_binary = get_adaptive_binary_image(img)
+
+    cv_utils.show_window('img_adaptive_binary', img_adaptive_binary)
+
+    end_binary = time.time()
+    print("=================================================")
+    print("Time to binary the image: ")
+    print("---- %s seconds ----" % (end_binary - start))
+
+    # Step2 and 3, Tìm đường viền lớn nhất và xoay nó
+    img_sheet, img_binary_sheet = get_rotated_sheet(img, img_adaptive_binary)
+
+    cv_utils.show_window('img_sheet_original', img_sheet)
+
+    end_fContour = time.time()
+    print("=================================================")
+    print("Time to biggest contour the image: ")
+    print("---- %s seconds ----" % (end_fContour - start))
+
+    # Step 4, Nhận một lưới mới với các đường dọc / ngang
+    img_binary_grid, img_binary_only_numbers = get_grid(img_binary_sheet)
+
+    end_gird = time.time()
+    print("=================================================")
+    print("Time to draw gird the image: ")
+    print("---- %s seconds ----" % (end_gird - start))
+
+    # Step 5, Nhận mọi ô lưới dưới dạng một lưới giới hạn được sắp xếp để sau này xác định vị trí các số để sửa ô
+    cells_bounding_rects, grid_bounding_rect = get_cells_bounding_rects(img_binary_grid, num_rows_in_grid, max_num_cols)
+
+    # Nhận diện tích của lưới từ các phiên bản khác nhau của raw img
+    img_binary_only_numbers = cv_utils.get_bounding_rect_content(img_binary_only_numbers, grid_bounding_rect)
+    img_binary_sheet = cv_utils.get_bounding_rect_content(img_binary_sheet, grid_bounding_rect)
+    img_sheet = cv_utils.get_bounding_rect_content(img_sheet, grid_bounding_rect)
+
+    end = time.time()
+    print("=================================================")
+    print("Time to locate the image: ")
+    print("---- %s seconds ----" % (end - start))
+
+    return img_sheet, img_binary_sheet, img_binary_only_numbers, cells_bounding_rects

@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6ff2bcd-3013-4295-860a-f4e304fdc439" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/output/img_sheet_original.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output/morph_dilate_binary_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output_excel/cv_inverted.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output_excel/horizontal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output_excel/img_vh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output_excel/output.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/output_excel/vertical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_106.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_107.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_108.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_109.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_110.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_112.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_113.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_117.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_121.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_124.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_127.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_129.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_130.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_132.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_133.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_134.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_135.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_136.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_137.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_138.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_139.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_140.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_141.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_142.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_143.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_145.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_146.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_147.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_149.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_151.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_154.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_155.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_158.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_161.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_162.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_163.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_164.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_165.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_166.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_168.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_169.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_171.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_172.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_174.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_181.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_182.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_183.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_184.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_185.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_186.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_187.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_188.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_189.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_190.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_191.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_194.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_196.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_197.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_199.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_201.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_204.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_206.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_207.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_208.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_209.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_210.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_211.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_212.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_213.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_215.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_217.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_218.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_219.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_220.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_221.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_222.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_224.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_225.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_226.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_227.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_228.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_229.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_230.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_231.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_233.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_236.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_237.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_239.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_241.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_243.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_244.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_245.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_246.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_247.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_248.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_249.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_252.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_253.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_254.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_255.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_257.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_258.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_259.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_261.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_262.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_263.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_264.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_265.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_266.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_267.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_268.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_269.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_270.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_271.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_272.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_273.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_276.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_279.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_281.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_283.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_284.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_285.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_286.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_288.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_291.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_292.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_293.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_294.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_295.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_296.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_297.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_298.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_299.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_301.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_302.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_303.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_305.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_306.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_307.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_308.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_310.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_311.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_312.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_316.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_317.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_318.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_321.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_322.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_323.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_324.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_325.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_326.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_327.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_328.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_331.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_332.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_333.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_334.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_335.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_336.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_337.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_338.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_339.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_340.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_341.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_343.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_344.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_353.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_355.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_359.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_360.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_361.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_362.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_364.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_365.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_369.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_370.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_373.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_374.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_375.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_376.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_377.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_378.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_379.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_380.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_381.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_382.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_383.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_384.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_385.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_386.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_387.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_389.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_390.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_391.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_392.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_393.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_394.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_395.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_396.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_397.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_398.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_399.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_402.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_406.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_407.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_409.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_420.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_421.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_84.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_86.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_87.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_88.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/original/roi_98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_101.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_106.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_107.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_108.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_109.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_110.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_112.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_113.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_114.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_117.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_120.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_121.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_124.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_126.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_127.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_129.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_130.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_132.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_133.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_134.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_135.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_136.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_137.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_138.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_139.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_140.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_141.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_142.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_143.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_145.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_146.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_147.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_149.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_151.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_152.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_154.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_155.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_158.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_161.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_162.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_163.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_164.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_165.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_166.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_167.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_168.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_169.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_170.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_171.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_172.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_174.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_175.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_177.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_178.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_179.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_181.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_182.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_183.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_184.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_185.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_186.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_187.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_188.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_189.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_190.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_191.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_193.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_194.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_196.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_197.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_198.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_199.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_201.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_202.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_203.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_204.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_205.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_206.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_207.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_208.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_209.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_210.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_211.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_212.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_213.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_215.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_217.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_218.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_219.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_220.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_221.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_222.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_223.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_224.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_225.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_226.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_227.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_228.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_229.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_230.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_231.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_232.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_233.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_234.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_235.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_236.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_237.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_238.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_239.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_241.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_243.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_244.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_245.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_246.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_247.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_248.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_249.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_250.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_252.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_253.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_254.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_255.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_257.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_258.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_259.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_260.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_261.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_262.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_263.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_264.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_265.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_266.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_267.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_268.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_269.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_270.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_271.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_272.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_273.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_276.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_279.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_280.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_281.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_283.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_284.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_285.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_286.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_288.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_291.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_292.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_293.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_294.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_295.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_296.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_297.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_298.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_299.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_301.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_302.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_303.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_304.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_305.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_306.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_307.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_308.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_310.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_311.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_312.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_313.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_316.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_317.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_318.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_319.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_320.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_321.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_322.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_323.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_324.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_325.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_326.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_327.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_328.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_331.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_332.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_333.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_334.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_335.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_336.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_337.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_338.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_339.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_340.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_341.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_343.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_344.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_353.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_355.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_359.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_360.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_361.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_362.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_364.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_365.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_369.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_370.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_373.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_374.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_375.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_376.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_377.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_378.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_379.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_380.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_381.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_382.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_383.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_384.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_385.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_386.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_387.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_388.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_389.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_390.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_391.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_392.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_393.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_394.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_395.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_396.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_397.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_398.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_399.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_401.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_402.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_404.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_406.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_407.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_409.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_419.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_420.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_421.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_84.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_86.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_87.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_88.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_98.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/test/new.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/test/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/test/sample_left.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/test/sample_right.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/biggest_contour.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/biggest_contour.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/concatenate_vertical_horizontal.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/concatenate_vertical_horizontal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/grid_binary_lines.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/grid_binary_lines.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/img_adaptive_binary.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/img_adaptive_binary.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/img_binary_only_numbers.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/img_binary_only_numbers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/img_binary_sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/img_binary_sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/img_cells.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/img_cells.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/img_sheet.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/img_sheet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/min_area_rect_original_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/min_area_rect_original_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/morph_keep_only_horizontal_lines.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/morph_keep_only_horizontal_lines.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output/morph_keep_only_vertical_lines.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output/morph_keep_only_vertical_lines.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/output_data/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/assets/output_data/data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_102.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_102.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_103.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_103.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_104.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_104.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_105.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_105.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_115.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_115.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_116.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_116.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_118.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_118.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_119.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_119.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_122.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_122.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_123.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_123.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_125.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_125.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_131.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_131.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_148.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_148.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_153.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_153.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_156.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_156.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_157.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_157.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_159.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_159.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_17.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_173.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_173.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_176.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_176.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_18.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_19.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_195.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_195.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_20.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_21.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_214.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_214.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_22.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_23.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_24.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_25.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_25.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_26.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_26.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_27.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_27.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_28.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_29.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_30.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_31.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_31.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_32.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_33.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_34.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_35.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_35.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_36.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_36.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_37.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_37.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_38.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_38.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_39.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_39.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_40.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_41.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_42.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_43.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_43.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_44.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_44.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_45.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_45.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_46.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_46.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_47.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_48.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_49.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_50.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_51.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_51.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_52.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_53.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_53.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_54.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_54.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_55.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_55.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_56.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_56.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_57.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_58.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_58.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_59.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_60.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_61.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_61.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_62.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_62.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_63.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_63.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_65.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_65.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_66.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_66.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_67.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_67.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_68.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_68.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_69.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_69.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_70.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_70.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_71.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_71.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_72.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_73.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_73.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_74.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_74.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_75.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_75.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_76.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_77.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_77.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_78.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_78.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_79.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_79.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_80.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_81.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_81.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_82.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_82.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_83.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_83.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_89.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_89.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_90.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_90.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_91.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_91.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_92.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_92.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_93.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_93.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_94.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_94.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_95.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_95.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_97.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_97.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/original/roi_99.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/original/roi_99.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_10.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_102.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_102.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_103.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_103.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_104.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_104.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_105.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_105.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_11.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_115.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_115.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_116.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_116.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_118.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_118.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_119.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_119.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_12.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_122.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_122.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_123.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_123.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_125.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_125.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_13.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_13.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_131.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_131.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_14.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_14.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_148.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_148.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_15.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_15.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_153.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_153.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_156.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_156.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_157.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_157.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_159.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_159.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_16.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_17.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_173.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_173.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_176.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_176.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_18.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_19.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_19.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_195.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_195.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_20.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_20.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_21.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_21.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_214.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_214.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_22.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_22.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_23.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_23.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_24.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_25.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_25.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_26.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_26.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_27.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_27.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_28.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_28.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_29.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_29.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_30.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_30.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_31.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_31.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_32.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_33.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_33.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_34.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_34.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_35.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_35.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_36.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_36.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_37.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_37.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_38.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_38.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_39.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_39.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_40.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_40.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_41.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_41.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_42.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_42.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_43.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_43.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_44.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_44.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_45.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_45.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_46.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_46.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_47.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_47.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_48.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_49.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_49.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_50.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_51.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_51.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_52.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_52.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_53.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_53.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_54.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_54.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_55.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_55.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_56.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_56.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_57.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_58.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_58.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_59.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_59.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_60.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_61.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_61.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_62.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_62.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_63.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_63.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_64.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_65.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_65.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_66.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_66.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_67.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_67.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_68.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_68.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_69.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_69.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_70.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_70.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_71.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_71.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_72.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_73.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_73.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_74.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_74.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_75.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_75.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_76.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_77.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_77.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_78.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_78.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_79.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_79.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_8.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_80.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_80.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_81.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_81.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_82.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_82.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_83.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_83.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_89.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_89.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_9.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_90.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_90.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_91.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_91.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_92.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_92.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_93.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_93.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_94.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_94.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_95.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_95.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_96.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_97.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_97.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/roi/shifted/roi_99.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/roi/shifted/roi_99.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/test/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/test/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/test/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models/model_tensorflow/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/models/models/model_tensorflow/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models/model_tensorflow/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/models/models/model_tensorflow/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/models/model_tensorflow/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/models/models/model_tensorflow/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sheet.py" beforeDir="false" afterPath="$PROJECT_DIR$/sheet.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1pVHrtvPwutCU1U6R3OxWnDMZwA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.convert">
+    <configuration name="convert" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NhanDang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/convert.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cv_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NhanDang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cv_utils.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="python_work" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NhanDang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python_work.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="sheet" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NhanDang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sheet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="NhanDang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.convert" />
+        <item itemvalue="Python.python_work" />
+        <item itemvalue="Python.sheet" />
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.cv_utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6ff2bcd-3013-4295-860a-f4e304fdc439" name="Default Changelist" comment="" />
+      <created>1615261544260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615261544260</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
